@@ -1,29 +1,32 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <meta charSet="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="frame-src https://script.google.com/">
-  <title>WIS Inventory</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIS Inventory</title>
+    <meta http-equiv="Content-Security-Policy" content="frame-src https://script.google.com/ https://*.google.com">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
 </head>
-
 <body>
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbwIEhiBU7nDAKsfcqk6ekzAGk-YCSGtMVuqZogX2OF-OSzh-OE_mHBVIE5u74LZBklb/exec"
-    title="WIS Inventory System">
-  </iframe>
+    <iframe sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+            src="https://script.google.com/macros/s/AKfycbwIEhiBU7nDAKsfcqk6ekzAGk-YCSGtMVuqZogX2OF-OSzh-OE_mHBVIE5u74LZBklb/exec">
+    </iframe>
 </body>
 </html>
