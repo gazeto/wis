@@ -11,23 +11,28 @@
             margin: 0;
             padding: 0;
             height: 100vh;
+            width: 100vw;
             overflow: hidden;
         }
         iframe {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             border: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
         }
     </style>
 </head>
 <body>
-    <iframe sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
-            src="https://script.google.com/macros/s/AKfycbwIEhiBU7nDAKsfcqk6ekzAGk-YCSGtMVuqZogX2OF-OSzh-OE_mHBVIE5u74LZBklb/exec">
+    <iframe 
+        sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+        src="https://script.google.com/macros/s/AKfycbwIEhiBU7nDAKsfcqk6ekzAGk-YCSGtMVuqZogX2OF-OSzh-OE_mHBVIE5u74LZBklb/exec"
+        scrolling="no">
     </iframe>
 </body>
 </html>
